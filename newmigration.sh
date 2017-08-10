@@ -5,4 +5,4 @@ read migname
 
 echo "Making migration for" $migname
 
-./vendor/bin/phinx create --template $TEMPLATE --configuration ../phinx.yml $migname
+./vendor/bin/phinx create --template $TEMPLATE --configuration local-phinx.yml $migname
