@@ -130,3 +130,6 @@ add some useful things to it.
 
 See file: **Migration.template.php.dist**
 
+# Ready to make migrations
+
+./newmigration.sh
