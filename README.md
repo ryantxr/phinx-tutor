@@ -112,3 +112,4 @@ then
 fi
 ```
 
+## Make a script for creating new migrations
