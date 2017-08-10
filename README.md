@@ -112,4 +112,21 @@ then
 fi
 ```
 
-## Make a script for creating new migrations
+## Make a script for creating new migrations **newmigration.sh**
+```
+#!/bin/bash
+TEMPLATE=Migration.template.php.dist
+echo "Enter name of your migration in camel case like this MyNewTable"
+read migname
+
+echo "Making migration for" $migname
+
+./vendor/bin/phinx create --template $TEMPLATE --configuration ../phinx.yml $migname
+```
+
+## Create a custom migration template
+Phinx has a default migration template but we create our own so we can 
+add some useful things to it.
+
+See file: **Migration.template.php.dist**
+
