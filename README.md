@@ -7,3 +7,8 @@ You will need:
 * MySQL
 * A folder for the Raven files
 * Composer
+
+## Make the raven folder
+
+mkdir raven && cd raven
+
